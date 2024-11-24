@@ -14,11 +14,9 @@ systemctl stop ocserv
 ``` bash
 systemctl status ocserv
 ```
-
-`````` bash
+```bash
 ocpasswd -c /etc/ocserv/ocpasswd <用户名>
 ```
-
-`````` bash
+```bash
 ocserv -c /etc/ocserv.conf
 ```
