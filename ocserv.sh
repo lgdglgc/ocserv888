@@ -18,8 +18,8 @@ install_ocserv(){
 edit_conf(){
 	echo -n "Server Address " > /etc/ocserv/server.address
 	echo -n $1 >> /etc/ocserv/server.address
-	echo ":3389(Port MUST Not Blocked)" >> /etc/ocserv/server.address
-	curl -o /etc/ocserv/ocserv.conf https://raw.githubusercontent.com/githik999/ocserv_one_key/main/ocserv.conf 
+	echo ":8443(Port MUST Not Blocked)" >> /etc/ocserv/server.address
+	curl -o /etc/ocserv/ocserv.conf https://raw.githubusercontent.com/lgdglgc/ocserv888/main/ocserv.conf 
 	echo "no-route=$1/24" >> /etc/ocserv/ocserv.conf
 }
 
