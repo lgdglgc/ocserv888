@@ -40,7 +40,7 @@ create_cert(){
 }
 
 version_check
-public_ip=`curl ifconfig.me`
+public_ip=`curl ipinfo.io/ip`
 install_ocserv
 edit_conf $public_ip
 edit_iptables
