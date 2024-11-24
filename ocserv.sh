@@ -60,7 +60,7 @@ cat /etc/ocserv/server.address
 echo "---------------------------------------------------------"
 echo "Username 252929177"
 echo "---------------------------------------------------------"
-echo "now set password"
+echo "password 2020"
 ocpasswd -c /etc/ocserv/ocpasswd 252929177
 
 
