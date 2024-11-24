@@ -1,9 +1,9 @@
 version_check(){
-	tmp=`cat /etc/ubuntu_version`
+	tmp=`cat /etc/debian_version`
 	ver=${tmp: 0: 1}
 	if [ "$ver" -gt "1" ];then
 		echo $tmp
-		echo 'only support ubuntu_version >= 18'
+		echo 'only support debian_version >= 18'
 		exit
 	fi
 }
