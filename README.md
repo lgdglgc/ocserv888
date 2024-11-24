@@ -17,3 +17,4 @@ systemctl status ocserv
 `````` bash
 ocpasswd -c /etc/ocserv/ocpasswd <用户名>
 ```
+ocserv -c /etc/ocserv.conf
