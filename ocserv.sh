@@ -28,7 +28,7 @@ edit_iptables(){
 	echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 	echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
 	sysctl -p
-	iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o ens3:0 -j MASQUERADE
+	iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE
 	iptables -A FORWARD -s 192.168.1.0/24 -j ACCEPT
 }
 
