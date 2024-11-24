@@ -3,7 +3,7 @@ version_check(){
 	ver=${tmp: 0: 1}
 	if [ "$ver" -gt "1" ];then
 		echo $tmp
-		echo 'only support ubuntu_version >= 20'
+		echo 'only support ubuntu_version >= 18'
 		exit
 	fi
 }
