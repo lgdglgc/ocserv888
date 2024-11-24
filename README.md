@@ -19,6 +19,7 @@ ocpasswd -c /etc/ocserv/ocpasswd <用户名>
 ```
 ```bash
 ocserv -c /etc/ocserv.conf
+```
 #root@vpn:/etc/ocserv# netstat -tulpn | grep 443
 #tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1987/ocserv
 #tcp6       0      0 :::443                  :::*                    LISTEN      1987/ocserv
